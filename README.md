@@ -88,165 +88,105 @@ Install the required Python libraries:
 
 ```bash
 pip install dnspython psutil pyjwt cryptography flask
-```
+
 
 Additional system tools may be needed depending on your environment:
-- tcpdump
-- arping
-- exiftool
-- sudo access for some network and system tools
 
----
+tcpdump
+arping
+exiftool
+sudo access for some network and system tools
 
-## Installation
-
-1. Clone the repository:
-
-```bash
+1. Installation
+Clone the repository:
 git clone <your-repository-url>
-cd "Advance Project"
-```
+cd "Ethical Hacking technique In One Place"
 
 2. Install the Python dependencies:
-
-```bash
 pip install dnspython psutil pyjwt cryptography flask
-```
 
-3. Run the project:
-
-```bash
+3.Run the project:
 python3 project_menu.py
-```
 
 or
-
-```bash
 python3 menu_advanced.py
-```
 
----
 
-## Usage
-
+Usage
 When you start the program, you will see a numbered menu with multiple security projects. Choose a number to run the corresponding tool.
 
 Example:
-- Select 1 for ARP Defender
-- Select 2 for DNS Guardian
-- Select 3 for Honeypot Pro
-- Select 13 for Malware Scanner
-- Select 14 for WAF Pro
 
+Select 1 for ARP Defender
+Select 2 for DNS Guardian
+Select 3 for Honeypot Pro
+Select 13 for Malware Scanner
+Select 14 for WAF Pro
 Some tools are long-running and may require pressing Ctrl+C to stop them.
 
----
-
-## Project Modules Description
-
-### 1. ARP Defender
+Project Modules Description
+1. ARP Defender
 Detects ARP spoofing attempts by monitoring ARP traffic and comparing the gateway MAC address with the expected value.
 
-### 2. DNS Guardian
+2. DNS Guardian
 Monitors DNS responses and checks whether a domain resolves to an unexpected IP address.
 
-### 3. Honeypot Pro
+3. Honeypot Pro
 Creates a simple multi-port honeypot that logs incoming connections and responds with basic banners.
 
-### 4. Privilege Escalation Auditor
+4. Privilege Escalation Auditor
 Collects information about the current user, sudo privileges, SUID binaries, and writable system paths.
 
-### 5. Metadata Hunter
+5. Metadata Hunter
 Scans files or directories and extracts metadata using exiftool.
 
-### 6. Log Watcher
+6. Log Watcher
 Monitors system logs for suspicious activity such as failed authentication attempts.
 
-### 7. Phishing Validator
+7. Phishing Validator
 Analyzes a supplied email address by checking its domain MX records.
 
-### 8. Vault Pro
+8. Vault Pro
 Provides a simple encrypted password vault using Fernet encryption and SQLite storage.
 
-### 9. Recon Pipeline
+9. Recon Pipeline
 Performs basic subdomain enumeration against a target domain.
 
-### 10. EDR Agent
+10. EDR Agent
 Looks for suspicious processes such as reverse shells and terminates them.
 
-### 11. JWT Breaker
+11. JWT Breaker
 Analyzes JWT tokens, inspects headers and payloads, and highlights common weaknesses.
 
-### 12. SSH Guardian
+12. SSH Guardian
 Monitors SSH authentication logs and blocks repeated brute-force attempts using iptables.
 
-### 13. Malware Scanner
+13. Malware Scanner
 Scans files for known malware hashes and moves suspicious files into a quarantine folder.
 
-### 14. WAF Pro
+14. WAF Pro
 Simulates a basic web application firewall that blocks suspicious request parameters.
 
-### 15. Session Tester
+15. Session Tester
 Demonstrates insecure session handling and cookie behavior in a Flask application.
 
-### 16. APK Ripper
+16. APK Ripper
 Provides a basic permission-risk evaluation example for Android APK-style analysis.
 
-### 17. AD BloodHound Collector
+17. AD BloodHound Collector
 Shows a conceptual example of collecting Active Directory information for security analysis.
 
-### 18. SOC Dashboard
+18. SOC Dashboard
 Displays live CPU, memory, and connection information in a simple SOC-style monitoring view.
 
-### 19–30
+19–30
 These are duplicate or alternate entry points that re-run modules 5–16 for easier access from the interactive menu.
 
----
-
-## File Structure
-
-```text
+File Structure
 Advance Project/
 ├── project_menu.py
 ├── menu_advanced.py
 └── README.md
-```
 
----
-
-## Important Notes
-
-- This project is intended for educational, defensive, and authorized security testing purposes only.
-- Some modules can interact with system-level services, network traffic, logs, or firewall rules.
-- Run these tools only on systems you own or are authorized to test.
-- Administrative privileges may be required for certain modules.
-
----
-
-## Example Use Cases
-
-- Learning how network monitoring tools work
-- Understanding common security detection mechanisms
-- Building a mini defensive security lab
-- Demonstrating security concepts in classroom or training environments
-- Practicing Python-based security automation
-
----
-
-## Future Improvements
-
-Possible enhancements for future versions include:
-- Adding a graphical user interface (GUI)
-- Improving logging and reporting
-- Adding more advanced detection rules
-- Supporting configuration files
-- Creating a more polished dashboard
-- Adding proper packaging and dependency management
-
----
-
-## Conclusion
-
+Conclusion
 This project is a practical and interactive collection of security tools that can help users understand defensive security concepts, real-world monitoring ideas, and basic security automation using Python.
-
-If you want, this project can also be expanded into a larger cybersecurity lab toolkit with more advanced modules and better usability.

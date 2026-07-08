@@ -99,7 +99,7 @@ sudo access for some network and system tools
 
 1. Installation
 Clone the repository:
-git clone <your-repository-url>
+git clone <https://github.com/jenishs524/Ethical-Hacking-technique-In-One-Place-.git>
 cd "Ethical Hacking technique In One Place"
 
 2. Install the Python dependencies:
